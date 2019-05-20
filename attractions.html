@@ -1,1 +1,169 @@
+<!doctype html>
 
+<html lang="en">
+
+<head>
+    <!--    Meta Data -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Savannah Safari Attractions</title>
+    <meta name="description" content="Savannah Safari Attractions">
+    <meta name="author" content="UoL Team Web Dev 41">
+    
+    <!--    css styles to be loaded -->
+    <link rel="stylesheet" href="assets/css/siteWide/style.css?v=1234234234">
+    
+    <!--    css styles for mix it up to be loaded -->
+    <link href="assets/css/mixitUp/reset.css" rel="stylesheet" />
+    <link href="assets/css/mixitUp/style.css" rel="stylesheet" />
+    
+    <!--    js  to be loaded -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/js/mixitUp/mixitup.min.js"></script>
+    
+</head>
+
+<body>
+
+    <header>
+        <!--    This is the header for the site - this appears on all pages -->
+        <nav>
+            <!--    This is the nav structure of all of the pages -->
+            <ul>
+                <li>Home</li>
+                <li>Plan your Visit</li>
+            </ul>
+        </nav>
+           <!--    This Park Logo -->
+        <img class="parkLogo" src="assets/images/logo.jpg" />
+    </header>
+
+    <section id="mainBody attractionFilters">
+        <!--    This section contain information on all of the attractions at the park -->
+        <h2>Our Attractions</h2>
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">Show All</button>
+            
+            <label>Height Restrictions: </label>
+            <button type="button" class="control" data-filter=".height0m">None</button>
+            <button type="button" class="control" data-filter=".height1m">1 metre</button>
+            <button type="button" class="control" data-filter=".height1_5m">1.5 metres</button>
+            
+            <label>Ride Type:</label>
+            <button type="button" class="control" data-filter=".thrill">Thrill</button>
+            <button type="button" class="control" data-filter=".family">Family</button>
+            <button type="button" class="control" data-filter=".education">Education</button>
+            <label>Age Restrictions:</label>
+
+            <button type="button" class="control" data-filter=".above15">Above 15</button>
+            <button type="button" class="control" data-filter=".above10">Above 10</button>
+            <button type="button" class="control" data-filter=".above0">No Age restriction</button>
+            <label>Sort Order:</label>
+            <button type="button" class="control" data-sort="default:asc">Asc</button>
+            <button type="button" class="control" data-sort="default:desc">Desc</button>
+        </div>
+
+        <div id="attractionsContainer" data-ref="attractionsContainer" class="container">
+            <div class="mix blue height1m family above10" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/1.jpg" /></div>
+            <div class="mix pink height1m thrill above0" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/2.jpeg" /></div>
+            <div class="mix red height1_5m thrill above15" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/3.jpg" /></div>
+            <div class="mix yellow height1m thrill above15" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/4.jpg" /></div>
+            <div class="mix pink height1m family above0" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/5.jpg" /></div>
+            <div class="mix blue height0m thrill above10" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/6.jpeg" /></div>
+            <div class="mix pink height1_5m family above15" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/7.jpeg" /></div>
+            <div class="mix pink height0m education above0" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/8.jpeg" /></div>
+            <div class="mix red height1m thrill above0" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/9.jpeg" /></div>
+            <div class="mix pink height1_5m education above10" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/10.png" /></div>
+            <div class="mix green height1_5m thrill above10" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/11.jpeg" /></div>
+            <div class="mix pink height0m family above15" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/12.jpg" /></div>
+            <div class="mix blue height1_5m education above10" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/13.jpg" /></div>
+            <div class="mix pink height0m thrill above15" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/14.jpg" /></div>
+            <div class="mix red height0m education above0" data-ref="attractionsTarget"><img class="tileItem" src="assets/images/attractions/15.jpg" /></div>
+        </div>
+    </section>
+
+    <section id="mainBody resturantFilters">
+        <!--    This section contains information about the food and restaurants in  the park-->
+
+        <h2>Our Restaurants</h2>
+        <div class="controls">
+            
+            
+           
+            <label>Restaurant Type:</label>
+            <button type="button" class="control" data-filter=".vegetarian">Vegetarian</button>
+            <button type="button" class="control" data-filter=".fastfood">Fast Food</button>
+            <button type="button" class="control" data-filter=".gourmet">Gourmet</button>
+            <label>Sort Order:</label>
+
+            <button type="button" class="control" data-sort="default:asc">Asc</button>
+            <button type="button" class="control" data-sort="default:desc">Desc</button>
+           
+            <div class="gap"></div>
+            <button type="button" class="control" data-filter="all">Show All</button>
+        </div>
+
+        <div id="restaurantsContainer" data-ref="restaurantsContainer" class="container">
+            <div class="mix blue vegetarian" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/1.jpeg" /></div>
+            <div class="mix red gourmet" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/2.jpeg" /></div>
+            <div class="mix yellow gourmet" data-ref="restaurantsTarget" data-ref="restaurantsTarget"><img src="assets/images/restaurants/3.jpeg" /></div>
+            <div class="mix blue vegetarian" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/4.jpg" /></div>
+            <div class="mix blue fastfood" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/5.jpeg" /></div>
+            <div class="mix yellow vegetarian" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/6.jpg" /></div>
+            <div class="mix red fastfood" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/7.jpeg" /></div>
+            <div class="mix blue gourmet" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/8.jpeg" /></div>
+            <div class="mix blue fastfood" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/9.jpeg" /></div>
+            <div class="mix blue vegetarian" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/10.jpg" /></div>
+            <div class="mix yellow gourmet" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/11.jpeg" /></div>
+            <div class="mix blue fastfood" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/12.jpeg" /></div>
+            <div class="mix red vegetarian" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/13.jpg" /></div>
+            <div class="mix yellow vegetarian" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/14.jpg" /></div>
+            <div class="mix blue fastfood" data-ref="restaurantsTarget"><img class="tileItem" src="assets/images/restaurants/15.jpeg" /></div>
+        </div>
+    </section>
+
+    <footer>
+        <!--    This is a footer that is global for the park -->
+        <section id="footer socialMedia"> Connect with us via social media
+            <a href="https://www.facebook.com/savannahsafari"><img class="socialMediaLogos" src="assets/images/social/facebook.png" /></a>
+            <a href="https://www.twitter.com/savannahsafari"><img class="socialMediaLogos" src="assets/images/social/twitter.png" /></a>
+            <a href="https://www.instagram.com/savannahsafari"><img class="socialMediaLogos" src="assets/images/social/instagram.png" /></a>
+        </section>
+        <section id="footer siteMap">
+            <ul>
+                <li>Home</li>
+                <li>Attractions</li>
+                <li>Plan your Visit</li>
+            </ul>
+        </section>
+        <section id="footer contactDetails">
+            Contact us on +44 12345 648122 - <a href="mailto:info@savannahsafari.co.uk">info@savannahsafari.co.uk</a>
+        </section>
+        <section id="footer openingTimes">
+            Open today from 08:30 until 17:00
+        </section>
+    </footer>
+   <!--    Loading MixItUp-->
+   <script>
+       
+        var attractionsContainer = document.querySelector('[data-ref~="attractionsContainer"]');
+
+            var mixer = mixitup(attractionsContainer, {
+                selectors: {
+                    target: '[data-ref~="attractionsTarget"]'
+                }
+            });
+       
+            var restaurantsContainer = document.querySelector('[data-ref~="restaurantsContainer"]');
+
+            var mixer = mixitup(restaurantsContainer, {
+                selectors: {
+                    target: '[data-ref~="restaurantsTarget"]'
+                }
+            });
+        </script>
+</body>
+
+</html>

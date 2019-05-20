@@ -1,0 +1,185 @@
+html,
+body {
+    height: 100%;
+    background: #f2f2f2;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #68b8c4;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+
+.mixitup-control-active {
+    background: #393939;
+}
+
+.mixitup-control-active[data-filter]:after {
+    background: transparent;
+}
+
+.control:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+
+.control:last-of-type {
+    border-radius: 0 3px 3px 0;
+}
+
+.radio-group {
+    display: inline-block;
+    padding: .5rem;
+    background: #2a2a2a;
+    margin-right: .75rem;
+    vertical-align: top;
+}
+
+.radio {
+    text-align: justify;
+}
+
+.radio:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.radio-input,
+.radio-label {
+    display: inline-block;
+}
+
+.radio-label {
+    color: white;
+    font-family: 'helvetica-neue', arial, sans-serif;
+    font-size: .9rem;
+    margin-right: .5rem;
+}
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+    padding: 1rem;
+    text-align: justify;
+    font-size: 0.1px;
+}
+
+.container:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    background: #fff;
+    border-top: .5rem solid currentColor;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.mix:before {
+    content: '';
+    display: inline-block;
+    padding-top: 56.25%;
+}
+
+.mix.green {
+    color: #91e6c7;
+}
+
+.mix.pink {
+    color: #d595aa;
+}
+
+.mix.blue {
+    color: #5ecdde;
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+.mix,
+.gap {
+    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+}
+
+/* 3 Columns */
+
+@media screen and (min-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 961px) {
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+    }
+}
+
+/* 5 Columns */
+
+@media screen and (min-width: 1281px) {
+    .mix,
+    .gap {
+        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+    }
+}
+
+
