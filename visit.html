@@ -1,153 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-
-<head>
+  <head>
     <!--    Meta Data -->
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Savannah Safari Attractions" />
+    <meta name="author" content="UoL Team Web Dev 41" />
     <title>Savannah Safari Attractions - Plan your Visit</title>
-    <meta name="description" content="Savannah Safari Attractions">
-    <meta name="author" content="UoL Team Web Dev 41">
 
     <!--    css styles to be loaded -->
-    <link rel="stylesheet" href="assets/css/siteWide/style.css?v=1234234234">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/calendar/jquery.CalendarHeatmap.min.css">
+    <link rel="stylesheet" href="assets/css/siteWide/style.css?v=1234234234" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/calendar/jquery.CalendarHeatmap.min.css"
+    />
 
     <!--    js  to be loaded -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="/assets/js/calendar/jquery.CalendarHeatmap.min.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
+    <!--    This is the header for the site - this appears on all pages -->
     <header>
-        <!--    This is the header for the site - this appears on all pages -->
-        <nav>
-            <!--    This is the nav structure of all of the pages -->
-            <ul>
-                <li>Home</li>
-                <li>Attractions</li>
-            </ul>
-        </nav>
-        <!--    This Park Logo -->
-        <img class="parkLogo" src="assets/images/parkLogo.png"  alt="Savannah Safari Logo" width="260" height="191">/>
+      <!--    This is the nav structure of all of the pages -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visit.html">Plan your visit</a></li>
+          <li><a href="attractions.html">Our attractions</a></li>
+        </ul>
+      </nav>
+
+      <!--    This Park Logo -->
+      <img class="parkLogo" src="assets/images/parkLogo.png" alt="Savannah Safari Logo" />
     </header>
 
-    <section id="mainBody-ticketTypes" class="mainBody ticketTypes">
-        <h2>Ticket Types</h2>
-        
-           <ul id="content-ticketTypes" class="content ticketTypes">
-            <li>Single Day Adult - £25</li>
-             <li>Single Day Child - £10</li>
-             <li>Family (2 Adult and 2 children  or 1 Adult and 3 children) - £40</li>
-             <li>Fast PASS (in addition to park ticket) - £10</li>
-             <li>Season Adult - £100</li>
-             <li>Season Child - £100</li>
-            </ul>
-      
+    <section id="mainBody-ticketTypes">
+      <h2>Ticket Types</h2>
+
+      <ul id="content-ticketTypes">
+        <li>Single Day Adult - £25</li>
+        <li>Single Day Child - £10</li>
+        <li>Family (2 Adult and 2 children or 1 Adult and 3 children) - £40</li>
+        <li>Fast PASS (in addition to park ticket) - £10</li>
+        <li>Season Adult - £100</li>
+        <li>Season Child - £100</li>
+      </ul>
     </section>
 
-    <section id="mainBody-offersAndDeals" class="mainBody offersAndDeals">
-         <h2>Offers and Deals</h2>
-   <div id="content-offersAndDeals" class="content offersAndDeals">
-       
-        
-           
-            <img class="standardImage" alt="Deal" src="assets/images/deal.jpg" />
-            Savannah Safari regular has offers and deals for it guest for attractive pricing on visiting us.
-
-            Currently we have 3 for 2 on all park tickets during September
-        
-    </div>
+    <section id="mainBody-offersAndDeals">
+      <h2>Offers and Deals</h2>
+      <div id="content-offersAndDeals">
+        <img class="standardImage" alt="Deal" src="assets/images/deal.jpg" />
+        <p>
+          Savannah Safari regular has offers and deals for it guest for attractive pricing on
+          visiting us. Currently we have 3 for 2 on all park tickets during September.
+        </p>
+      </div>
     </section>
 
-    <section id="mainBody-otherInformation" class="mainBody otherInformation">
-        <h2>Parking</h2>
-        <!--        This is where all of the other information for a visit is held-->
-        <div id="otherInformation-parking" class="otherInformation parking">
-            
-           
-            The Savannah Safari Theme park is lucky to have a large parking that is available to all guest holding a valid park entry ticket
-            for free. The parking is not under survelliance and cars are left at the owners risk
-            
-        </div>
+    <!--        This is where all of the other information for a visit is held-->
+    <section id="mainBody-otherInformation">
+      <h2>Parking</h2>
+      <p>
+        The Savannah Safari Theme park is lucky to have a large parking that is available to all
+        guest holding a valid park entry ticket for free. The parking is not under survelliance and
+        cars are left at the owners risk
+      </p>
     </section>
 
-        <section id="otherInformation-visitorCalendar"  class="otherInformation visitorCalendar">
-               <h2>Calendar of Visitor Numbers</h2>
-            <div id="content-visitorCalendar"  class="content visitorCalendar">
-             
+    <section id="otherInformation-visitorCalendar">
+      <h2>Calendar of Visitor Numbers</h2>
+      <p>
+        This calendar is here to help you plan your visit - there are moments of the year that are
+        busy than others
+      </p>
+      <div id="visitorCalendarHeatMap"></div>
+    </section>
 
-            This calendar is here to help you plan your visit - there are moments of the year that are busy than others
+    <!-- This is a footer that is global for the park -->
+    <footer id="footer-socialMedia">
+      <section>
+        <h2>Connect with us via social media</h2>
+        <h3>Social Media</h3>
+        <a href="https://www.facebook.com/savannahsafari">
+          <img class="socialMediaLogos" alt="facebook" src="assets/images/social/facebook.png" />
+        </a>
+        <a href="https://www.twitter.com/savannahsafari">
+          <img class="socialMediaLogos" alt="twitter" src="assets/images/social/twitter.png" />
+        </a>
+        <a href="https://www.instagram.com/savannahsafari">
+          <img class="socialMediaLogos" alt="instagram" src="assets/images/social/instagram.png" />
+        </a>
+      </section>
 
-            <div id="visitorCalendarHeatMap"></div>
-            <script>
+      <section id="footer-siteMap" class="footer siteMap">
+        <h3>Site Map</h3>
+        <ul>
+          <li>Home</li>
+          <li>Attractions</li>
+          <li>Plan your Visit</li>
+        </ul>
+      </section>
 
-                function randomDate(start, end) {
-			var date = new Date(+start + Math.random() * (end - start));
-			return moment(date).format('YYYY-MM-DD');
-		}
+      <section id="footer-contactDetails">
+        <h3>Contact Details</h3>
+        <p>
+          Contact us on <a href="tel:+44 12345 648122">+44 12345 648122</a> -
+          <a href="mailto:info@savannahsafari.co.uk">info@savannahsafari.co.uk</a>
+        </p>
+      </section>
 
-		var events = 500
-		var data = [];
-		for (var i = 0; i < events; i++ ) {
-			data.push({
-				count: parseInt( ( Math.random() * 200 ).toFixed(0) ),
-				date: randomDate( moment().subtract(1, 'year').subtract(5,'months').format('x'), moment().format('x') )
-			});
-		}
+      <section id="footer-openingTimes">
+        <h3>Opening Times</h3>
+        <p>Open today from 08:30 until 17:00</p>
+      </section>
+    </footer>
+    <!-- End of footer -->
 
-            	$("#visitorCalendarHeatMap").CalendarHeatmap(data, {
-			title: "Please see the heat map below",
-			lastMonth: moment().month(),
-			coloring: "red",
-			legend: {
-				minLabel: "Empty"
-			},
-			labels: {
-				custom: {
-					monthLabels: "MMM"
-				}
-			}
-		});</script>
-
-
-            </div>
-        </section>
-
-        <footer>
-            
-            <!--    This is a footer that is global for the park -->
-            <section id="footer-socialMedia" class="footer socialMedia"> Connect with us via social media
-                <h6>Social Media</h6>
-                <a href="https://www.facebook.com/savannahsafari"><img class="socialMediaLogos" alt="facebook" src="assets/images/social/facebook.png" /></a>
-                <a href="https://www.twitter.com/savannahsafari"><img class="socialMediaLogos" alt="twitter" src="assets/images/social/twitter.png" /></a>
-                <a href="https://www.instagram.com/savannahsafari"><img class="socialMediaLogos" alt="instagram" src="assets/images/social/instagram.png" /></a>
-            </section>
-            <section id="footer-siteMap" class="footer siteMap">
-                   <h6>Site Map</h6>
-                <ul>
-                    <li>Home</li>
-                    <li>Attractions</li>
-                    <li>Plan your Visit</li>
-                </ul>
-            </section>
-            <section id="footer-contactDetails" class="footer contactDetails">
-                   <h6>Contact Details</h6>
-                Contact us on +44 12345 648122 - <a href="mailto:info@savannahsafari.co.uk">info@savannahsafari.co.uk</a>
-            </section>
-            <section id="footer-openingTimes" class="footer openingTimes">
-                <h6>Opening Times</h6>
-                Open today from 08:30 until 17:00
-            </section>
-        </footer>
-</body>
-
+    <!-- loading at the end to make sure the dom is ready by then -->
+    <script src="assets/js/visit.js"></script>
+  </body>
 </html>
