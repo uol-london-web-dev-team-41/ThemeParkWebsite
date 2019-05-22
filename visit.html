@@ -14,10 +14,15 @@
     
     <!--    css styles to be loaded -->
     <link rel="stylesheet" href="assets/css/siteWide/style.css?v=1234234234">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/calendar/jquery.CalendarHeatmap.min.css">
     
     <!--    js  to be loaded -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/assets/js/calendar/jquery.CalendarHeatmap.min.js"></script>
 </head>
 
 <body>
@@ -32,11 +37,21 @@
             </ul>
         </nav>
            <!--    This Park Logo -->
-        <img class="parkLogo" src="assets/images/logo.jpg" />
+        <img class="parkLogo" src="assets/images/parkLogo.png" />
     </header>
 
     <section id="mainBody ticketTypes">
-       
+       <h2>Ticket Types</h2>
+        <span id="content ticketTypes">
+           <ul>
+            <li>Single Day Adult - £25</li>
+             <li>Single Day Child - £10</li>
+             <li>Family (2 Adult and 2 children  or 1 Adult and 3 children) - £40</li>
+             <li>Fast PASS (in addition to park ticket) - £10</li>
+             <li>Season Adult - £100</li>
+             <li>Season Child - £100</li>
+            </ul>
+        </span>
     </section>
 
     <section id="mainBody offersAndDeals">
@@ -66,24 +81,46 @@
         
         
         
-        <div id="otherInformation howToFindUs">
-        <h2>How to Find us</h2>
-        <span id="content howToFindUs">
-            The Savannah Safari is really easy to located we are just off the M1 north of London near Stevenage.
-            <iframe src="https://www.google.com/maps/place/London,+UK/@51.8952989,-0.2260588,13z/data=!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5073509!4d-0.1277583">Sorry your browser doesn't support frames.</iframe>
-            </span>
-        
+      
+            <section id="otherInformation visitorCalendar">
+         <div id="content visitorCalendar">
+        <h2>Calendar of Visitor Numbers</h2>
+        <span id="content visitorCalendar">
+            This calendar is here to help you plan your visit - there are moments of the year that are busy than others
+            
+            <div id="visitorCalendarHeatMap"></div>
+            <script>
+            
+                function randomDate(start, end) {
+			var date = new Date(+start + Math.random() * (end - start));
+			return moment(date).format('YYYY-MM-DD');
+		}
+
+		var events = 500
+		var data = [];
+		for (var i = 0; i < events; i++ ) {
+			data.push({
+				count: parseInt( ( Math.random() * 200 ).toFixed(0) ),
+				date: randomDate( moment().subtract(1, 'year').subtract(5,'months').format('x'), moment().format('x') )
+			});
+		}
+                
+            	$("#visitorCalendarHeatMap").CalendarHeatmap(data, {
+			title: "Please see the heat map below",
+			lastMonth: moment().month(),
+			coloring: "red",
+			legend: {
+				minLabel: "Empty"
+			},
+			labels: {
+				custom: {
+					monthLabels: "MMM"
+				}
+			}
+		});</script>
+
+             </span>
         </div>
-        
-         <div id="otherInformation howToFindUs">
-        <h2>How to Find us</h2>
-        <span id="content howToFindUs">
-            The Savannah Safari is really easy to located we are just off the M1 north of London near Stevenage.
-            <iframe src="https://www.google.com/maps/place/London,+UK/@51.8952989,-0.2260588,13z/data=!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5073509!4d-0.1277583">Sorry your browser doesn't support frames.</iframe>
-            </span>
-        
-        </div>
-       
     </section>
 
     <footer>
@@ -107,25 +144,6 @@
             Open today from 08:30 until 17:00
         </section>
     </footer>
-   <!--    Loading MixItUp-->
-   <script>
-       
-        var attractionsContainer = document.querySelector('[data-ref~="attractionsContainer"]');
-
-            var mixer = mixitup(attractionsContainer, {
-                selectors: {
-                    target: '[data-ref~="attractionsTarget"]'
-                }
-            });
-       
-            var restaurantsContainer = document.querySelector('[data-ref~="restaurantsContainer"]');
-
-            var mixer = mixitup(restaurantsContainer, {
-                selectors: {
-                    target: '[data-ref~="restaurantsTarget"]'
-                }
-            });
-        </script>
 </body>
 
 </html>
