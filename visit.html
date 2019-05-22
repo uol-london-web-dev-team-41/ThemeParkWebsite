@@ -1,1 +1,112 @@
+<!doctype html>
 
+<html lang="en">
+
+<head>
+    <!--    Meta Data -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Savannah Safari Attractions - Plan your Visit</title>
+    <meta name="description" content="Savannah Safari Attractions">
+    <meta name="author" content="UoL Team Web Dev 41">
+    
+    <!--    css styles to be loaded -->
+    <link rel="stylesheet" href="assets/css/siteWide/style.css?v=1234234234">
+    
+    
+    <!--    js  to be loaded -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!--    This is the header for the site - this appears on all pages -->
+        <nav>
+            <!--    This is the nav structure of all of the pages -->
+            <ul>
+                <li>Home</li>
+                <li>Attractions</li>
+            </ul>
+        </nav>
+           <!--    This Park Logo -->
+        <img class="parkLogo" src="assets/images/logo.jpg" />
+    </header>
+
+    <section id="mainBody ticketTypes">
+       
+    </section>
+
+    <section id="mainBody offersAndDeals">
+       
+    </section>
+    
+    <section id="mainBody otherInformation">
+        
+<!--        This is where all of the other information for a visit is held-->
+        <div id="otherInformation parking">
+          <h2>Parking</h2>
+        <span id="content parking">
+            The Savannah Safari Theme park is lucky to have a large parking that is available to all guest holding a valid park entry ticket
+            for free. The parking is not under survelliance and cars are left at th
+            
+            </span>
+        </div>
+        
+        <div id="">
+        
+        
+        </div>
+        
+        <div id="">
+        
+        
+        </div>
+       
+    </section>
+
+    <footer>
+        <!--    This is a footer that is global for the park -->
+        <section id="footer socialMedia"> Connect with us via social media
+            <a href="https://www.facebook.com/savannahsafari"><img class="socialMediaLogos" src="assets/images/social/facebook.png" /></a>
+            <a href="https://www.twitter.com/savannahsafari"><img class="socialMediaLogos" src="assets/images/social/twitter.png" /></a>
+            <a href="https://www.instagram.com/savannahsafari"><img class="socialMediaLogos" src="assets/images/social/instagram.png" /></a>
+        </section>
+        <section id="footer siteMap">
+            <ul>
+                <li>Home</li>
+                <li>Attractions</li>
+                <li>Plan your Visit</li>
+            </ul>
+        </section>
+        <section id="footer contactDetails">
+            Contact us on +44 12345 648122 - <a href="mailto:info@savannahsafari.co.uk">info@savannahsafari.co.uk</a>
+        </section>
+        <section id="footer openingTimes">
+            Open today from 08:30 until 17:00
+        </section>
+    </footer>
+   <!--    Loading MixItUp-->
+   <script>
+       
+        var attractionsContainer = document.querySelector('[data-ref~="attractionsContainer"]');
+
+            var mixer = mixitup(attractionsContainer, {
+                selectors: {
+                    target: '[data-ref~="attractionsTarget"]'
+                }
+            });
+       
+            var restaurantsContainer = document.querySelector('[data-ref~="restaurantsContainer"]');
+
+            var mixer = mixitup(restaurantsContainer, {
+                selectors: {
+                    target: '[data-ref~="restaurantsTarget"]'
+                }
+            });
+        </script>
+</body>
+
+</html>
