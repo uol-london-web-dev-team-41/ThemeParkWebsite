@@ -1,51 +1,103 @@
-<HTML>
-   <HEAD>
-      <meta charset="utf-8">
-      <TITLE>Savannah Safari Home page</TITLE>
-   </HEAD>
-   <BODY>
-       
-       <div class="links to pages">
-       <a href="visit.html"> Plan your visit </a>
-       <p></p>
-       <a href="attractions.html">Attractions</a>
-       <p></p>
-       </div>
-       
-       
-       <img src="assets/images/parkLogo.png" alt="Savannah Safari Logo" width="260" height="191">
-       <h1>Savannah Safari</h1>
-       
-       <div class="advert">
-       <img src="assets/images/advertisement%20placeholder.png" alt="advertisement placeholder" width="869" hight="233">
-       <p></p>
-       </div>
-       
-       <a href="visit.html">Buy your tickets here!</a>
-       
-       <div class="welcome">
-       <P> Welcome to Savannah safari Park with some of the country’s best collection of exotic animals, attractions and fun for all the family.</P>
-       </div>
-       
-       <p></p>
-       
-       <div class="events">
-       <h2>Events</h2>
-       <p><b>Learn about the animals</b></p>
-       <p>come and learn about all the wonderful and exotic animals in our park and get to meet some of the friendlier ones</p>
-       <p><b>Time:</b> 14:00</p>
-       <p><b>Location:</b> Learning cirlce</p>
-       </div>
-       
-       <p></p>
-       
-       <img src="assets/images/Map%20placehodler.png" alt="map placeholder">
-       <div class="general info">
-       <h2>General info</h2>
-       <p><b>Contact us</b></p>
-       <p><b>Phone:</b>xxxxxxxxxx</p>
-       <p><b>Email:</b> example@savannahsafari.com</p>
-       </div>
-   </BODY>
-    
-</HTML>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!--    Meta Data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Savannah Safari Attractions" />
+    <meta name="author" content="UoL Team Web Dev 41" />
+    <title>Savannah Safari Attractions - Homepage</title>
+
+    <!--    css styles to be loaded -->
+    <link rel="stylesheet" href="assets/css/siteWide/style.css?v=1234234234" />
+  </head>
+
+  <body>
+    <!--    This is the header for the site - this appears on all pages -->
+    <header>
+      <!--    This is the nav structure of all of the pages -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visit.html">Plan your visit</a></li>
+          <li><a href="attractions.html">Our attractions</a></li>
+        </ul>
+      </nav>
+
+      <!--    This Park Logo -->
+      <img class="parkLogo" src="assets/images/parkLogo.png" alt="Savannah Safari Logo" />
+    </header>
+
+    <article>
+      <h1>Savannah Safari</h1>
+
+      <img
+        src="assets/images/advertisement%20placeholder.png"
+        alt="advertisement placeholder"
+        width="869"
+      />
+
+      <div class="welcome">
+        <a href="visit.html">Buy your tickets here!</a>
+        <P>
+          Welcome to Savannah safari Park with some of the country’s best collection of exotic
+          animals, attractions and fun for all the family.
+        </P>
+      </div>
+
+      <div class="events">
+        <h2>Events</h2>
+        <p><b>Learn about the animals</b></p>
+        <p>
+          come and learn about all the wonderful and exotic animals in our park and get to meet some
+          of the friendlier ones
+        </p>
+        <p><b>Time:</b> 14:00</p>
+        <p><b>Location:</b> Learning cirlce</p>
+      </div>
+
+      <img src="assets/images/Map%20placehodler.png" alt="map placeholder" />
+    </article>
+
+    <!-- This is a footer that is global for the park -->
+    <footer id="footer-socialMedia">
+      <section>
+        <h2>Connect with us via social media</h2>
+        <h3>Social Media</h3>
+        <a href="https://www.facebook.com/savannahsafari">
+          <img class="socialMediaLogos" alt="facebook" src="assets/images/social/facebook.png" />
+        </a>
+        <a href="https://www.twitter.com/savannahsafari">
+          <img class="socialMediaLogos" alt="twitter" src="assets/images/social/twitter.png" />
+        </a>
+        <a href="https://www.instagram.com/savannahsafari">
+          <img class="socialMediaLogos" alt="instagram" src="assets/images/social/instagram.png" />
+        </a>
+      </section>
+
+      <section id="footer-siteMap" class="footer siteMap">
+        <h3>Site Map</h3>
+        <ul>
+          <li>Home</li>
+          <li>Attractions</li>
+          <li>Plan your Visit</li>
+        </ul>
+      </section>
+
+      <section id="footer-contactDetails">
+        <h3>Contact Details</h3>
+        <p>
+          Contact us on <a href="tel:+44 12345 648122">+44 12345 648122</a> -
+          <a href="mailto:info@savannahsafari.co.uk">info@savannahsafari.co.uk</a>
+        </p>
+      </section>
+
+      <section id="footer-openingTimes">
+        <h3>Opening Times</h3>
+        <p>Open today from 08:30 until 17:00</p>
+      </section>
+    </footer>
+    <!-- End of footer -->
+  </body>
+</html>
