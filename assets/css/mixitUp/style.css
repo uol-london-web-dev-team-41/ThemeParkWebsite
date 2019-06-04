@@ -154,6 +154,9 @@ button + label{
 .gap {
     width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
 }
+.tileItem {
+         width: 99.9%
+    }
 
 /* 3 Columns */
 
@@ -161,6 +164,9 @@ button + label{
     .mix,
     .gap {
         width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+    .tileItem {
+         width: 99.9%
     }
 }
 
@@ -171,6 +177,9 @@ button + label{
     .gap {
         width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
     }
+    .tileItem {
+       width: 99.9%
+    }
 }
 
 /* 5 Columns */
@@ -179,6 +188,9 @@ button + label{
     .mix,
     .gap {
         width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+    }
+    .tileItem {
+        width: 99.9%;            
     }
 }
 

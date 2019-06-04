@@ -1,15 +1,146 @@
-body {
-  background-color: white !important;
+
+@font-face {
+	font-family: 'Africian';
+	src: url('/assets/fonts/african.eot');
+	src: local('☺'), url('/assets/fonts/african.woff') format('woff'), url('/assets/fonts/african.ttf') format('truetype'), url('/assets/fonts/african.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+
+body {
+  background-color: white;
+  font-size: 20px;
+  text-align:center;
+  margin-top: 400px;
+  margin-bottom: 400px;
+}
+
+/* This is the NAV area */
+
+header {
+   position: fixed;
+   left: 0;
+   top: 0;
+    width: 100%;
+
+    background-image: url(/assets/images/giraffePattern.png);
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #ffd989;
+  overflow: hidden;
+  background-color: #333;
+    
+}
+
+nav li {
+ float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Africian", "Arial", sans-serif;
+}
+
+nav li a:hover {
+   background-color: #ffd989;
+   color: black;
+}
+
+/* This is the park name */
+.mainTitle {
+    font-family: "Africian", "Arial", sans-serif;
+    font-size: 50px;
+    background-color: white;
+    width: 30%;
+    border-style:solid;
+    border-color:black;
+    margin-left: auto; /* forces center */
+    margin-right: auto;/* forces center */ 
+    
+}
+
+/*This is the park logo are that appears on each page*/
 
 .parkLogo {
-  height: 200px;
+  height: 200px; 
+  display: block;
+  margin-top: 5px;
+    margin-left: auto; /* forces center */
+  margin-right: auto;/* forces center */ 
+  border-style:solid;
+  border-color:black;
 }
 
-.tileItem {
-  height: 220px;
+/*This is the footer area*/
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffd989;
+  color: black;
+  border-bottom: solid;
+    
 }
+
+footer h3 {
+    font-family: "Africian", "Arial", sans-serif;
+    font-size: 15px;
+}
+
+
+footer section {
+  float: left;
+  width: 25%;
+    
+ 
+}
+
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 .socialMediaLogos {
   height: 30px;
+}
+
+
+footer #footer-siteMap ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+}
+
+footer #footer-siteMap li {
+  float: left;
+}
+
+footer #footer-siteMap li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+footer #footer-siteMap li a:hover {
+  background-color: #ffd989;
 }

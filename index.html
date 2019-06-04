@@ -11,26 +11,30 @@
 
     <!--    css styles to be loaded -->
     <link rel="stylesheet" href="assets/css/siteWide/style.css?v=1234234234" />
+      <link rel="stylesheet" href="assets/css/homePage.css?v=1234234234" />
   </head>
 
   <body>
     <!--    This is the header for the site - this appears on all pages -->
     <header>
-      <!--    This is the nav structure of all of the pages -->
-      <nav>
-        <ul>
+     
+      
+
+      <!--    This Park Logo -->
+      <img class="parkLogo" src="assets/images/parkLogo.png" alt="Savannah Safari Logo" />
+         <h1 class="mainTitle">Savannah Safari</h1>
+         <!--    This is the nav structure of all of the pages -->
+         <nav>
+           <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="visit.html">Plan your visit</a></li>
           <li><a href="attractions.html">Our attractions</a></li>
         </ul>
       </nav>
-
-      <!--    This Park Logo -->
-      <img class="parkLogo" src="assets/images/parkLogo.png" alt="Savannah Safari Logo" />
     </header>
 
     <article>
-      <h1>Savannah Safari</h1>
+     
 
       <img
         src="assets/images/advertisement%20placeholder.png"
@@ -61,10 +65,9 @@
     </article>
 
     <!-- This is a footer that is global for the park -->
-    <footer id="footer-socialMedia">
-      <section>
-        <h2>Connect with us via social media</h2>
-        <h3>Social Media</h3>
+    <footer>
+      <section id="footer-socialMedia">
+        <h3>Connect with us via social media</h3>
         <a href="https://www.facebook.com/savannahsafari">
           <img class="socialMediaLogos" alt="facebook" src="assets/images/social/facebook.png" />
         </a>
@@ -79,9 +82,9 @@
       <section id="footer-siteMap" class="footer siteMap">
         <h3>Site Map</h3>
         <ul>
-          <li>Home</li>
-          <li>Attractions</li>
-          <li>Plan your Visit</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visit.html">Plan your visit</a></li>
+          <li><a href="attractions.html">Our attractions</a></li>
         </ul>
       </section>
 
