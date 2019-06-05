@@ -1,1 +1,23 @@
 /*This is the visits css*/
+
+
+ #mainBody-ticketTypes ul {
+     list-style-image: url('/assets/images/visits/ticket.png');
+     list-style-position: inside ;
+     text-align: left;
+     padding-left: calc(100%/3);
+}
+
+
+body {
+ font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+}
+
+
+#visitorCalendarHeatMap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
