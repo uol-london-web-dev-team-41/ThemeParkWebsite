@@ -1,0 +1,12 @@
+/*This is the attractions css*/
+
+.tileItem {
+  width: 250px;
+}
+
+.attractionsContent section {
+  margin: 3em 2em 0;
+}
+.attractionsContent > section:last-of-type {
+  margin: 3em 2em 3em;
+}

@@ -1,0 +1,13 @@
+/*This is the visits css*/
+
+#mainBody-ticketTypes ul li {
+  background: url("/assets/images/visits/ticket.png");
+  background-repeat: no-repeat;
+  list-style: none;
+  text-align: left;
+  padding: 15px 55px 20px;
+}
+.price {
+  float: right;
+  margin-left: 50px;
+}

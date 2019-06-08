@@ -1,15 +1,19 @@
-var attractionsContainer = document.querySelector('[data-ref~="attractionsContainer"]');
-
-mixitup(attractionsContainer, {
+var attractions = document.querySelector(".attractionFilters");
+mixitup(attractions, {
   selectors: {
     target: '[data-ref~="attractionsTarget"]'
+  },
+  controls: {
+    scope: "local"
   }
 });
 
-var restaurantsContainer = document.querySelector('[data-ref~="restaurantsContainer"]');
-
-mixitup(restaurantsContainer, {
+var restaurants = document.querySelector(".resturantFilters");
+mixitup(restaurants, {
   selectors: {
     target: '[data-ref~="restaurantsTarget"]'
+  },
+  controls: {
+    scope: "local"
   }
 });
