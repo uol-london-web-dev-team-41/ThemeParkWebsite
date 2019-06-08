@@ -1,6 +1,14 @@
 /*This is the homepage css*/
 
-.welcome {
-    font-size: 18px;
-    
+.welcome img {
+  width: 800px;
+}
+
+.events a {
+  background: url("/assets/images/visits/ticket.png");
+  background-repeat: no-repeat;
+  list-style: none;
+  text-align: left;
+  padding: 15px 5px 20px 55px;
+  color: #22d911;
 }

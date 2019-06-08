@@ -1,167 +1,178 @@
+/* Normalize browser differences and set box-sizing on every element */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
 
-@font-face {
-	font-family: 'Africian';
-	src: url('/assets/fonts/african.eot');
-	src: local('☺'), url('/assets/fonts/african.woff') format('woff'), url('/assets/fonts/african.ttf') format('truetype'), url('/assets/fonts/african.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background-color: white;
-  font-size: 20px;
-  text-align:center;
-  margin-top: 400px;
-  margin-bottom: 400px;
-  font-family: Helvetica Neue, Helvetica, Arial,sans-serif;
-}
-
-/* This is the NAV area */
-
-header {
-   position: fixed;
-   left: 0;
-   top: 0;
-    width: 100%;
-    z-index: 5; /* Make sure that nothing ges over this*/
-    background-image: url(/assets/images/giraffePattern.png);
-}
-
-
-nav ul {
-  list-style-type: none;
   margin: 0;
-  padding-left: calc(100%/3);
+}
+
+/* Text style */
+
+@font-face {
+  font-family: "Africian";
+  src: url("/assets/fonts/african.eot");
+  src: local("☺"), url("/assets/fonts/african.woff") format("woff"),
+    url("/assets/fonts/african.ttf") format("truetype"),
+    url("/assets/fonts/african.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: white;
+  font-size: 18px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Africian, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+h2 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.1em;
+}
+.helvetica {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.hero {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+}
+
+/* Layout */
+
+body {
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content > section {
+  margin: 3em 2em 0;
+  max-width: 800px;
+}
+.content > section:last-of-type {
+  margin: 3em 2em 3em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer section {
+  flex: 1;
+  min-height: 200px;
+  max-width: 250px;
+}
+footer section {
+  padding-left: 20px;
+}
+footer section:last-of-type {
+  padding-right: 20px;
+}
+
+/* Header area */
+
+header h1 {
+  font-size: 50px;
+  width: 400px;
+  padding: 15px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background-image: url(/assets/images/giraffePattern.png);
+}
+header nav ul {
+  margin: 0;
+  list-style-type: none;
   border-top: solid;
   border-bottom: solid;
   border-color: #ffd989;
-  overflow: hidden;
   background-color: #333;
-    
 }
-
-nav li {
- float: left;
-}
-
 nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  font-family: Africian, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
   text-decoration: none;
-  font-family: Africian, Helvetica Neue, Helvetica, Arial,sans-serif;
+  color: white;
+  display: block;
+  padding: 22px 16px;
 }
-
 nav li a:hover {
-   background-color: #ffd989;
-   color: black;
+  background-color: #ffd989;
+  color: black;
 }
-
-/* This is the park name */
-.mainTitle {
-     font-family: Africian, Helvetica Neue, Helvetica, Arial,sans-serif;
-    font-size: 50px;
-    background-color: white;
-    width: 30%;
-    border-style:solid;
-    border-color:black;
-    margin-left: auto; /* forces center */
-    margin-right: auto;/* forces center */ 
-    
-}
-
-.safariTitle  {
-    font-family: Africian, Helvetica Neue, Helvetica, Arial,sans-serif;
-}
-
 
 /*This is the park logo are that appears on each page*/
 
 .parkLogo {
-  height: 200px; 
-  display: block;
-  margin-top: 5px;
-    margin-left: auto; /* forces center */
-  margin-right: auto;/* forces center */ 
-  border-style:solid;
-  border-color:black;
+  height: 200px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: black;
 }
 
 /*This is the footer area*/
-
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: #ffd989;
   color: black;
-  border-bottom: solid;
-    
+  border-top: 3px solid;
+  border-top: 3px solid;
 }
 
-footer h3 {
-     font-family: Africian, Helvetica Neue, Helvetica, Arial,sans-serif;
-    font-size: 15px;
-}
-
-
-footer section {
-  float: left;
-  width: 25%;
-    
- 
-}
-
-footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.socialMediaLogos {
-  height: 30px;
+.socialMediaLogo {
   text-decoration: none;
 }
-
-
-footer #footer-siteMap ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     overflow: hidden;  
+.socialMediaLogo img {
+  height: 30px;
 }
 
-
-footer #footer-siteMap li a {  
-  color: blue;
-  text-decoration:underline;
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
-footer #footer-siteMap li a:hover {
+footer li a {
+  color: black;
+  text-decoration: underline;
+}
+footer li {
+  color: black;
+  text-decoration: underline;
+}
+footer li a:hover {
   color: black;
 }
-
-/* Glyph, by Harry Roberts */
-
-hr.style-eight {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
+footer li a:visited {
+  color: black;
 }
-hr.style-eight:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    z-index: 0;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
-}
-

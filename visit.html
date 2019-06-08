@@ -11,8 +11,8 @@
 
     <!--    css styles to be loaded -->
     <link rel="stylesheet" href="assets/css/siteWide/style.css?v=1234234234" />
-      <link rel="stylesheet" href="/assets/css/visits.css?v=1234234234" />
-    
+    <link rel="stylesheet" href="/assets/css/visits.css?v=1234234234" />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -29,12 +29,10 @@
   <body>
     <!--    This is the header for the site - this appears on all pages -->
     <header>
-     
-
       <!--    This Park Logo -->
       <img class="parkLogo" src="assets/images/parkLogo.png" alt="Savannah Safari Logo" />
-         <h1 class="mainTitle">Savannah Safari</h1>
-         <!--    This is the nav structure of all of the pages -->
+      <h1>Savannah Safari</h1>
+      <!--    This is the nav structure of all of the pages -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -44,69 +42,73 @@
       </nav>
     </header>
 
-    <section id="mainBody-ticketTypes">
-      <h2 class="safariTitle">Ticket Types</h2>
+    <div class="content">
+      <section id="mainBody-ticketTypes">
+        <h2>Ticket Types</h2>
+        <ul id="content-ticketTypes">
+          <li>Single Day Adult <span class="price">£25</span></li>
+          <li>Single Day Child <span class="price">£10</span></li>
+          <li>
+            Family (2 Adult and 2 children or 1 Adult and 3 children)
+            <span class="price">£40</span>
+          </li>
+          <li>Fast PASS (in addition to park ticket) <span class="price">£10</span></li>
+          <li>Season Adult <span class="price">£100</span></li>
+          <li>Season Child <span class="price">£100</span></li>
+        </ul>
+      </section>
 
-      <ul id="content-ticketTypes">
-        <li>Single Day Adult - £25</li>
-        <li>Single Day Child - £10</li>
-        <li>Family (2 Adult and 2 children or 1 Adult and 3 children) - £40</li>
-        <li>Fast PASS (in addition to park ticket) - £10</li>
-        <li>Season Adult - £100</li>
-        <li>Season Child - £100</li>
-      </ul>
-    </section>
-<hr class="style-eight" / >
-    <section id="mainBody-offersAndDeals">
-      <h2 class="safariTitle">Offers and Deals</h2>
-      <div id="content-offersAndDeals">
-        <img class="standardImage" alt="Deal" src="/assets/images/visits/deal.png" />
+      <section id="mainBody-offersAndDeals">
+        <h2>Offers and Deals</h2>
+        <div id="content-offersAndDeals">
+          <img class="standardImage" alt="Deal" src="/assets/images/visits/deal.png" />
+          <p>
+            Savannah Safari regular has offers and deals for it guest for attractive pricing on
+            visiting us. Currently we have 3 for 2 on all park tickets during September.
+          </p>
+        </div>
+      </section>
+
+      <!--        This is where all of the other information for a visit is held-->
+      <section id="mainBody-otherInformation">
+        <img src="/assets/images/visits/parking.png" alt="parking" />
+        <h2>Parking</h2>
         <p>
-          Savannah Safari regular has offers and deals for it guest for attractive pricing on
-          visiting us. Currently we have 3 for 2 on all park tickets during September.
+          The Savannah Safari Theme park is lucky to have a large parking that is available to all
+          guest holding a valid park entry ticket for free. The parking is not under survelliance
+          and cars are left at the owners risk
         </p>
-      </div>
-    </section>
-      <hr class="style-eight" / >
+      </section>
 
-    <!--        This is where all of the other information for a visit is held-->
-    <section id="mainBody-otherInformation">
-      <img src="/assets/images/visits/parking.png" /><h2 class="safariTitle">Parking</h2>
-      <p>
-        The Savannah Safari Theme park is lucky to have a large parking that is available to all
-        guest holding a valid park entry ticket for free. The parking is not under survelliance and
-        cars are left at the owners risk
-      </p>
-    </section>
-<hr class="style-eight" / >
-    <section id="otherInformation-visitorCalendar">
-        <img src="/assets/images/visits/calendar.png" /><h2 class="safariTitle">Calendar of Visitor Numbers</h2>
-      <p>
-        This calendar is here to help you plan your visit - there are moments of the year that are
-        busy than others
-      </p>
-      <div id="visitorCalendarHeatMap"></div>
-    </section>
+      <section id="otherInformation-visitorCalendar">
+        <img src="/assets/images/visits/calendar.png" alt="calendar" />
+        <h2>Calendar of Visitor Numbers</h2>
+        <p>
+          This calendar is here to help you plan your visit - there are moments of the year that are
+          busy than others
+        </p>
+        <div id="visitorCalendarHeatMap"></div>
+      </section>
+    </div>
 
     <!-- This is a footer that is global for the park -->
     <footer>
       <section id="footer-socialMedia">
-        <h3>Connect with us via social media</h3>
-    
-        <a href="https://www.facebook.com/savannahsafari">
-          <img class="socialMediaLogos" alt="facebook" src="assets/images/social/facebook.png" />
+        <h4>Connect with us via social media</h4>
+
+        <a class="socialMediaLogo" href="https://www.facebook.com/savannahsafari">
+          <img alt="facebook" src="assets/images/social/facebook.png" />
         </a>
-        <a href="https://www.twitter.com/savannahsafari">
-          <img class="socialMediaLogos" alt="twitter" src="assets/images/social/twitter.png" />
+        <a class="socialMediaLogo" href="https://www.twitter.com/savannahsafari">
+          <img alt="twitter" src="assets/images/social/twitter.png" />
         </a>
-        <a href="https://www.instagram.com/savannahsafari">
-          <img class="socialMediaLogos" alt="instagram" src="assets/images/social/instagram.png" />
+        <a class="socialMediaLogo" href="https://www.instagram.com/savannahsafari">
+          <img alt="instagram" src="assets/images/social/instagram.png" />
         </a>
       </section>
 
-      
       <section id="footer-siteMap" class="footer siteMap">
-        <h3>Site Map</h3>
+        <h4>Site Map</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="visit.html">Plan your visit</a></li>
@@ -115,16 +117,19 @@
       </section>
 
       <section id="footer-contactDetails">
-        <h3>Contact Details</h3>
-        <p>
-          Contact us on <a href="tel:+4412345648122">+44 12345 648122</a> -
-          <a href="mailto:info@savannahsafari.co.uk">info@savannahsafari.co.uk</a>
-        </p>
+        <h4>Contact Details</h4>
+        <ul>
+          <li><a href="tel:+4412345648122">+44 12345 648122</a></li>
+          <li><a href="mailto:info@savannahsafari.co.uk">info@savannahsafari.co.uk</a></li>
+        </ul>
       </section>
 
       <section id="footer-openingTimes">
-        <h3>Opening Times</h3>
-        <p>Open today from 08:30 until 17:00</p>
+        <h4>Opening Times</h4>
+        <p>
+          Open today <br />
+          08:30 - 17:00
+        </p>
       </section>
     </footer>
     <!-- End of footer -->

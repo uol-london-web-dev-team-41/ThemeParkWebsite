@@ -1,16 +1,12 @@
 /*This is the attractions css*/
 
 .tileItem {
-    width: 250px;
+  width: 250px;
 }
 
-#mainBody-attractionFilters {
-    margin-top: 400px;
-    
+.attractionsContent section {
+  margin: 3em 2em 0;
 }
-
-.safariTitle  {
-    font-family: Africian, Helvetica Neue, Helvetica, Arial,sans-serif;
-    font-size: 50px;
-    padding-bottom: 20px;
+.attractionsContent > section:last-of-type {
+  margin: 3em 2em 3em;
 }
