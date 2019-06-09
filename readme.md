@@ -2,7 +2,7 @@
 
 ## G Drive Information
 https://drive.google.com/drive/folders/1Dl1wWqFgA5qqLUxm9SpTGe7TSayyoHwI
-We used [Google Drive] for sharing of ideas and document.
+We used [Google Drive](http://drive.google.com) for sharing of ideas and document.
 
 ## Wire Frames
 
@@ -16,4 +16,4 @@ Alternatively you can use [VSCode + Live server extension](https://github.com/ri
 ## Tools
 
 [Prettier code formatter](https://prettier.io/)
-[w3c code validator] (https://validator.w3.org/)
+[w3c code validator](https://validator.w3.org/)
