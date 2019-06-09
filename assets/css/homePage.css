@@ -4,6 +4,8 @@
   width: 800px;
 }
 
+/*Give the events section styling*/
+
 .events a {
   background: url("/assets/images/visits/ticket.png");
   background-repeat: no-repeat;

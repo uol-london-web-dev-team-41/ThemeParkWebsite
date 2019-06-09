@@ -1,3 +1,8 @@
+
+
+/*This is the main style that spans across all of the site*/
+
+
 /* Normalize browser differences and set box-sizing on every element */
 *,
 *:before,
@@ -18,7 +23,9 @@ body {
   margin: 0;
 }
 
-/* Text style */
+/* Text style  - import fonts */
+
+
 
 @font-face {
   font-family: "Africian";
@@ -29,6 +36,9 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+/* multiple fonts for borwser comptibility */
+
 body {
   background-color: white;
   font-size: 18px;
@@ -60,11 +70,6 @@ body {
   text-align: center;
 }
 
-header nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .content {
   display: flex;
@@ -79,6 +84,8 @@ header nav ul {
 .content > section:last-of-type {
   margin: 3em 2em 3em;
 }
+
+/* Footer */
 
 footer {
   display: flex;
@@ -112,6 +119,9 @@ header h1 {
 header {
   background-image: url(/assets/images/giraffePattern.png);
 }
+
+/* NAV */
+
 header nav ul {
   margin: 0;
   list-style-type: none;
@@ -119,7 +129,11 @@ header nav ul {
   border-bottom: solid;
   border-color: #ffd989;
   background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 nav li a {
   font-family: Africian, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -133,7 +147,7 @@ nav li a:hover {
   color: black;
 }
 
-/*This is the park logo are that appears on each page*/
+/*This is the park logo that appears on each page*/
 
 .parkLogo {
   height: 200px;
@@ -143,6 +157,7 @@ nav li a:hover {
 }
 
 /*This is the footer area*/
+
 footer {
   background-color: #ffd989;
   color: black;

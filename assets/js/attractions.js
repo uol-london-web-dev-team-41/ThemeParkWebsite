@@ -1,3 +1,8 @@
+// extra JS for the attractions page
+
+
+//fixes to mix it up to have multiple items on one page
+
 var attractions = document.querySelector(".attractionFilters");
 mixitup(attractions, {
   selectors: {
