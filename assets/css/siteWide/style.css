@@ -87,6 +87,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 /* Equal ratio columns taking up all the available space, and shrinking when necessary */
 footer section {
   flex: 1;
@@ -98,6 +99,16 @@ footer section {
 }
 footer section:last-of-type {
   padding-right: 20px;
+}
+
+/* Change to 1 columns on smaller display size */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+  footer section {
+    min-height: auto;
+  }
 }
 
 /* Header area */
@@ -127,6 +138,7 @@ header {
 
 header nav ul {
   margin: 0;
+  padding: 0;
   list-style-type: none;
   border-top: solid;
   border-bottom: solid;
@@ -135,6 +147,16 @@ header nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Change to 1 columns on smaller display size */
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav li {
+    width: 100%;
+  }
 }
 
 nav li a {
