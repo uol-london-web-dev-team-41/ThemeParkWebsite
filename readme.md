@@ -1,6 +1,9 @@
 # Savannah Safari Theme Park - UoL Team Web Dev 41
 
+Visit the site on https://wgmwehzs.coursera-apps.org/index.html
+
 ## G Drive Information
+
 https://drive.google.com/drive/folders/1Dl1wWqFgA5qqLUxm9SpTGe7TSayyoHwI
 We used [Google Drive](http://drive.google.com) for sharing of ideas and document.
 
