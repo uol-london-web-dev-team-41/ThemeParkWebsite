@@ -3,6 +3,14 @@
 .welcome img {
   width: 800px;
 }
+@media (max-width: 800px) {
+  .welcome img {
+    max-width: 100%;
+  }
+  .events img {
+    max-width: 100%;
+  }
+}
 
 /*Give the events section styling*/
 
