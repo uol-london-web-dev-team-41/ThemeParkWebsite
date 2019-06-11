@@ -101,6 +101,13 @@ footer section:last-of-type {
 }
 
 /* Header area */
+.weather {
+  position: fixed;
+  top: 4px;
+  left: 4px;
+  padding: 0;
+  margin: 0;
+}
 
 header h1 {
   font-size: 50px;
@@ -154,6 +161,32 @@ nav li a:hover {
   margin-top: 10px;
   border-style: solid;
   border-color: #000000;
+}
+
+/* The spinning weather indicator */
+.weather {
+  font-weight: 900;
+}
+.weather img {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /*This is the footer area*/
