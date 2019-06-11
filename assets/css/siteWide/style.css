@@ -80,12 +80,14 @@ body {
 }
 
 /* Footer */
+/* A flexible grid for the 4 columns */
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+/* Equal ratio columns taking up all the available space, and shrinking when necessary */
 footer section {
   flex: 1;
   min-height: 200px;
@@ -135,6 +137,10 @@ nav li a {
   color: white;
   display: block;
   padding: 22px 16px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 nav li a:hover {
   background-color: #ffd989;
