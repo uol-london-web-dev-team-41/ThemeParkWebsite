@@ -1,7 +1,4 @@
-
-
 /*This is the main style that spans across all of the site*/
-
 
 /* Normalize browser differences and set box-sizing on every element */
 *,
@@ -24,8 +21,6 @@ body {
 }
 
 /* Text style  - import fonts */
-
-
 
 @font-face {
   font-family: "Africian";
@@ -69,7 +64,6 @@ h4 {
 body {
   text-align: center;
 }
-
 
 .content {
   display: flex;
