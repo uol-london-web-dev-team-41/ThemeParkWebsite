@@ -35,7 +35,7 @@ body {
 /* multiple fonts for borwser comptibility */
 
 body {
-  background-color: white;
+  background-color: #ffffff;
   font-size: 18px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -106,9 +106,9 @@ header h1 {
   font-size: 50px;
   width: 400px;
   padding: 15px;
-  background-color: white;
+  background-color: #ffffff;
   border-style: solid;
-  border-color: black;
+  border-color: #000000;
   margin-left: auto;
   margin-right: auto;
 }
@@ -124,7 +124,7 @@ header nav ul {
   border-top: solid;
   border-bottom: solid;
   border-color: #ffd989;
-  background-color: #333;
+  background-color: rgba(33, 33, 33, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +134,7 @@ nav li a {
   font-family: Africian, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   display: block;
   padding: 22px 16px;
   -webkit-transition: all 0.5s ease-out;
@@ -144,7 +144,7 @@ nav li a {
 }
 nav li a:hover {
   background-color: #ffd989;
-  color: black;
+  color: #000000;
 }
 
 /*This is the park logo that appears on each page*/
@@ -153,14 +153,14 @@ nav li a:hover {
   height: 200px;
   margin-top: 10px;
   border-style: solid;
-  border-color: black;
+  border-color: #000000;
 }
 
 /*This is the footer area*/
 
 footer {
   background-color: #ffd989;
-  color: black;
+  color: #000000;
   border-top: 3px solid;
   border-top: 3px solid;
 }
@@ -178,16 +178,16 @@ footer ul {
   padding: 0;
 }
 footer li a {
-  color: black;
+  color: #000000;
   text-decoration: underline;
 }
 footer li {
-  color: black;
+  color: #000000;
   text-decoration: underline;
 }
 footer li a:hover {
-  color: black;
+  color: #000000;
 }
 footer li a:visited {
-  color: black;
+  color: #000000;
 }
